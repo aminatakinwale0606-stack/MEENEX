@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="7uqY1ct_EQN0nhG9t7SfFz_1HaV2vIxscIBfWhz1bAY" />
+<meta name="description" content="MEENEX learning centre: beginner-friendly lessons in criminology, criminal justice and cybersecurity.">
+<meta name="theme-color" content="#123b2d">
+<title>MEENEX | Learning Centre</title>
+<style>
+:root{--green:#123b2d;--deep:#0b281f;--gold:#c9a65a;--cream:#f7f2e8;--ink:#24352e;--muted:#68766e}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+header{background:linear-gradient(135deg,var(--deep),var(--green));color:white;padding:42px 20px 38px}
+.wrap{max-width:900px;margin:auto;padding:0 18px}.brand{font-size:13px;letter-spacing:4px;color:#e6ca86;font-weight:bold}
+h1{font-size:clamp(34px,8vw,54px);line-height:1.08;margin:14px 0 12px;letter-spacing:1px}
+header p{max-width:650px;color:#e8eee9;margin:0;font-size:16px}
+.pill{display:inline-block;border:1px solid #c9a65a;border-radius:30px;padding:6px 13px;color:#f0d99e;font-size:12px;margin-top:22px}
+main{padding:30px 0 60px}.introbox{background:white;border-left:4px solid var(--gold);padding:18px 20px;border-radius:10px;box-shadow:0 5px 20px #163b2d0b;margin-bottom:22px}
+.progress{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted);margin:18px 2px 10px}
+.track{height:8px;background:#e6e0d4;border-radius:10px;overflow:hidden}.bar{height:100%;width:0;background:var(--gold);transition:width .2s}
+.lesson{background:white;border:1px solid #e9e2d5;border-radius:12px;margin:12px 0;overflow:hidden;box-shadow:0 4px 15px #163b2d08}
+.lesson-toggle{width:100%;border:0;background:white;text-align:left;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--green);cursor:pointer}
+.lesson-toggle small{display:block;color:#a27d34;font-size:10px;letter-spacing:1.5px;font-weight:bold;margin-bottom:3px}
+.lesson-toggle strong{font-size:17px}.plus{font-size:24px;color:#a27d34}
+.lesson-body{display:none;padding:0 20px 22px;border-top:1px solid #f0ece4}.lesson-body.open{display:block}
+.lesson-body h3{font-size:15px;color:var(--green);margin:20px 0 4px}.lesson-body p{margin:5px 0;color:#4c5b53}
+.lesson-body .intro{font-size:15px;margin-top:16px}.reflection{background:#f8f3e7;border-radius:9px;padding:13px 15px;margin-top:20px}.reflection strong{color:#87651f}
+footer{background:var(--deep);color:#dce7df;text-align:center;padding:25px 15px;font-size:13px}footer strong{color:#e2c47d;letter-spacing:2px}
+@media(min-width:700px){.lesson-toggle{padding:20px 22px}.lesson-toggle strong{font-size:18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">MEENEX</div><h1>Learn. Understand.<br>Make an impact.</h1><p>Your learning space for criminology, criminal justice and cybersecurity. Start with the foundations and build your knowledge one lesson at a time.</p><span class="pill">14 BEGINNER-FRIENDLY LESSONS</span></div></header>
+<main class="wrap">
+<div class="introbox"><strong>Welcome to the MEENEX Learning Centre.</strong><br>Open a lesson to study its key ideas and complete the reflection question. These lessons are educational introductions; always consult current local law and professional guidance for real cases.</div>
+<div class="progress"><span>Your lesson progress</span><span id="count">0 of 14 opened</span></div><div class="track"><div class="bar" id="bar"></div></div>
+<section aria-label="MEENEX lessons">
+    <article class="lesson" id="lesson-1">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(1)">
+        <span><small>LESSON 01</small><strong>Introduction to Criminology</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-1">
+        <p class="intro">Criminology is the systematic study of crime, people who commit crime, victims, and society’s responses to offending.</p><h3>What criminology studies</h3><p>Criminology looks at how crime is defined, why it happens, how it affects individuals and communities, and how societies try to prevent and respond to it.</p><h3>Criminology and criminal justice</h3><p>Criminology is a field of study. The criminal justice system is the set of institutions and processes—such as policing, courts and corrections—that respond to crime.</p><h3>Why it matters</h3><p>Understanding crime can help communities develop fairer laws, improve prevention, support victims and reduce reoffending.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Explain one way criminological research could help a community reduce harm.</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-2">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(2)">
+        <span><small>LESSON 02</small><strong>Criminological Theories</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-2">
+        <p class="intro">Criminological theories offer different explanations for why crime occurs. No single theory explains every offence or every person.</p><h3>Classical perspectives</h3><p>Classical approaches emphasise choice, responsibility and the idea that people may weigh possible benefits against consequences.</p><h3>Biological and psychological perspectives</h3><p>These approaches examine how individual development, health, cognition and behaviour may relate to offending. They should never be used to assume that a person is destined to commit crime.</p><h3>Sociological perspectives</h3><p>Social learning, strain, inequality, peer groups and community conditions can influence opportunities, pressures and norms connected with offending.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Choose one theory and describe a limitation it might have.</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-3">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(3)">
+        <span><small>LESSON 03</small><strong>Victimology</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-3">
+        <p class="intro">Victimology studies victims, patterns of victimisation, the effects of crime and the services and rights available to people harmed by crime.</p><h3>Who is a victim?</h3><p>A victim may be an individual, group or organisation that experiences harm from an offence. The impact can be physical, emotional, financial or social.</p><h3>Impact and support</h3><p>People may need medical care, counselling, practical assistance, safety planning or help navigating legal processes.</p><h3>Respectful practice</h3><p>Avoid blaming victims. Listen without judgement, protect privacy and recognise that people respond to trauma in different ways.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Why is victim-sensitive communication important during an investigation?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-4">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(4)">
+        <span><small>LESSON 04</small><strong>The Criminal Justice System</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-4">
+        <p class="intro">The criminal justice system includes agencies and procedures that investigate alleged offences, determine cases and administer lawful outcomes.</p><h3>Police and investigation</h3><p>Police may receive reports, preserve scenes, interview witnesses and gather evidence, subject to applicable law and safeguards.</p><h3>Courts and due process</h3><p>Courts assess evidence and apply the law. Fair-trial principles include the presumption of innocence and the right to be heard.</p><h3>Corrections and rehabilitation</h3><p>Correctional services administer sentences and may provide education, treatment and reintegration support.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Why must an accused person be treated as innocent until proven guilty?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-5">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(5)">
+        <span><small>LESSON 05</small><strong>Introduction to Cybercrime</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-5">
+        <p class="intro">Cybercrime involves unlawful activity in which computers, networks or digital data are the target, tool or setting of an offence.</p><h3>Cyber-dependent offences</h3><p>Some offences rely on technology, such as unauthorised access, malware deployment or disruption of computer systems.</p><h3>Cyber-enabled offences</h3><p>Other offences, such as fraud, harassment or identity theft, may be amplified or facilitated by digital platforms.</p><h3>Staying safer online</h3><p>Use unique passwords, multi-factor authentication, software updates and caution with unexpected links or requests for money.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Give one example each of a cyber-dependent and a cyber-enabled offence.</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-6">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(6)">
+        <span><small>LESSON 06</small><strong>Cybersecurity Fundamentals</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-6">
+        <p class="intro">Cybersecurity is the practice of protecting devices, accounts, networks and information from unauthorised access, damage or disruption.</p><h3>Confidentiality, integrity and availability</h3><p>Confidentiality means information is seen only by authorised people. Integrity means it remains accurate and unaltered. Availability means authorised users can access it when needed.</p><h3>Common threats</h3><p>Threats include phishing, weak passwords, malicious software, social engineering and unpatched vulnerabilities.</p><h3>Basic protection</h3><p>Keep systems updated, back up important files, use reputable security tools and verify unusual requests through a separate trusted channel.</p>
+        <div class="reflection"><strong>Think about it</strong><p>What is one practical step that improves each of confidentiality, integrity and availability?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-7">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(7)">
+        <span><small>LESSON 07</small><strong>Digital Evidence and Forensics</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-7">
+        <p class="intro">Digital forensics is the careful identification, preservation, examination and reporting of information from digital devices and systems.</p><h3>Types of digital evidence</h3><p>Evidence may include messages, emails, files, photographs, metadata, access logs and records from online services.</p><h3>Preservation</h3><p>Investigators should avoid unnecessary changes to devices or data and follow lawful procedures for collection and storage.</p><h3>Integrity and documentation</h3><p>A documented chain of custody and appropriate integrity checks help show that evidence has not been improperly altered.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Why is it important to document who handled digital evidence and when?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-8">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(8)">
+        <span><small>LESSON 08</small><strong>Online Fraud and Scams</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-8">
+        <p class="intro">Online fraud uses digital communication or services to deceive people or organisations for money, information or another benefit.</p><h3>Common warning signs</h3><p>Be cautious of urgency, guaranteed returns, impersonation, unusual payment methods and requests for passwords or one-time codes.</p><h3>Verification</h3><p>Check claims using an independently found official contact channel. Do not rely only on links or phone numbers in a suspicious message.</p><h3>If targeted</h3><p>Stop communication, preserve relevant messages and transaction details, contact your bank or payment provider promptly and report through appropriate official channels.</p>
+        <div class="reflection"><strong>Think about it</strong><p>A message says your account will be closed unless you share a one-time code. What should you do?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-9">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(9)">
+        <span><small>LESSON 09</small><strong>Cyberstalking and Online Harassment</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-9">
+        <p class="intro">Cyberstalking and online harassment involve repeated or threatening behaviour through digital channels that may cause fear, distress or harm.</p><h3>Examples</h3><p>Conduct can include repeated unwanted contact, threats, monitoring, impersonation, doxxing or publishing private material without consent.</p><h3>Safety steps</h3><p>Review privacy settings, secure accounts, save evidence safely, block or report accounts where appropriate and tell a trusted person.</p><h3>Support and reporting</h3><p>Threats or immediate danger should be taken seriously. Seek local support and report through appropriate authorities or platform channels.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Why might preserving evidence be useful before blocking an abusive account?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-10">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(10)">
+        <span><small>LESSON 10</small><strong>Privacy, Data Protection and Ethics</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-10">
+        <p class="intro">Privacy and data protection concern how personal information is collected, used, stored, shared and secured.</p><h3>Personal information</h3><p>Personal data can identify someone directly or indirectly. Sensitive information deserves especially careful handling.</p><h3>Responsible data use</h3><p>Collect only what is necessary, explain the purpose, restrict access and keep information only as long as justified and lawful.</p><h3>Ethical practice</h3><p>Researchers and practitioners should respect dignity, confidentiality, fairness and applicable laws.</p>
+        <div class="reflection"><strong>Think about it</strong><p>What does data minimisation mean, and why is it useful?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-11">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(11)">
+        <span><small>LESSON 11</small><strong>Policing and Crime Prevention</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-11">
+        <p class="intro">Crime prevention aims to reduce opportunities for crime, lower risks of harm and strengthen community safety.</p><h3>Situational prevention</h3><p>This approach changes environments or processes to make offending more difficult, risky or less rewarding.</p><h3>Community partnerships</h3><p>Trust, communication and cooperation between residents, services and law enforcement can help identify local concerns.</p><h3>Evidence-led approaches</h3><p>Prevention should be evaluated for effectiveness, fairness and unintended consequences.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Suggest one prevention measure for a repeated bicycle-theft problem and explain why it may work.</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-12">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(12)">
+        <span><small>LESSON 12</small><strong>Punishment, Rehabilitation and Restorative Justice</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-12">
+        <p class="intro">Criminal justice responses may include punishment, rehabilitation, public protection and processes that repair harm.</p><h3>Purposes of sentencing</h3><p>Sentencing purposes can include accountability, deterrence, public protection and rehabilitation, depending on the law and case.</p><h3>Rehabilitation</h3><p>Education, skills training, treatment and practical reintegration support may help reduce future offending.</p><h3>Restorative justice</h3><p>Where lawful, voluntary and safe, restorative processes may give affected people a structured way to discuss harm, responsibility and possible repair.</p>
+        <div class="reflection"><strong>Think about it</strong><p>How can rehabilitation benefit both an individual and the wider community?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-13">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(13)">
+        <span><small>LESSON 13</small><strong>Research Methods in Criminology</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-13">
+        <p class="intro">Criminological research uses systematic methods to understand crime, victimisation, justice processes and prevention.</p><h3>Quantitative methods</h3><p>Surveys, official statistics and structured datasets can help identify patterns and compare groups or time periods.</p><h3>Qualitative methods</h3><p>Interviews, observations and document analysis can provide deeper insight into experiences and meanings.</p><h3>Ethics and limitations</h3><p>Researchers should protect participants, explain consent, consider bias and avoid treating correlation as proof of causation.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Why might official crime statistics not show the full amount of crime in a community?</p></div>
+      </div>
+    </article>
+    <article class="lesson" id="lesson-14">
+      <button class="lesson-toggle" aria-expanded="false" onclick="toggleLesson(14)">
+        <span><small>LESSON 14</small><strong>Careers in Criminology and Cybersecurity</strong></span><span class="plus">＋</span>
+      </button>
+      <div class="lesson-body" id="body-14">
+        <p class="intro">Criminology and cybersecurity offer different but sometimes overlapping career paths in public service, research, technology and community support.</p><h3>Criminology-related roles</h3><p>Possible paths include research, policy, victim support, probation-related services, crime analysis and justice administration, subject to local qualifications.</p><h3>Cybersecurity-related roles</h3><p>Possible paths include security operations, digital forensics, incident response, governance, risk and compliance, and security awareness.</p><h3>Building a pathway</h3><p>Study foundational subjects, practise ethical skills in authorised environments, build a portfolio and check the qualifications required in your country.</p>
+        <div class="reflection"><strong>Think about it</strong><p>Which career area interests you most, and what skill would you begin developing?</p></div>
+      </div>
+    </article></section>
+</main>
+<footer><strong>MEENEX</strong><br>Knowledge creates understanding. Understanding creates change.</footer>
+<script>
+const opened = new Set();
+function toggleLesson(n){
+ const panel=document.getElementById('body-'+n);
+ const button=document.querySelector('#lesson-'+n+' .lesson-toggle');
+ const isOpen=panel.classList.toggle('open');
+ button.setAttribute('aria-expanded',String(isOpen));
+ button.querySelector('.plus').textContent=isOpen?'−':'＋';
+ if(isOpen) opened.add(n); else opened.delete(n);
+ document.getElementById('count').textContent=opened.size+' of 14 opened';
+ document.getElementById('bar').style.width=(opened.size/14*100)+'%';
+}
+</script>
+</body></html>
